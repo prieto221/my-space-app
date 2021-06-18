@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js" async defer></script>
+    <script type="module" src="planet.js" async defer></script>
+    <script type="module" src="textdata.js" async defer></script>
+    <audio class="startrek" src="./music/startrek.mp3"></audio>
+  </head>
+  <body>
+    <div class="container">
+      <div class="canvas" id="canvas">
+        
+        <div id="bodies"></div>
+
+        <h2 class="esc-tip">Press "Esc" to deselect</h2>
+
+        <img class="saturn-real hide" src="./images/saturn-real.png" alt="saturn-real">
+
+        <div class="orbit mercury"></div>
+        <div class="orbit venus"></div>
+        <div class="orbit earth"></div>
+        <div class="orbit mars"></div>
+        <div class="orbit jupiter"></div>
+        <div class="orbit saturn"></div>
+        <div class="orbit saturn-ring"></div>
+        <div class="orbit uranus"></div>
+        <div class="orbit neptune"></div>
+
+        <div id="settings" class="settings">
+          <button id="btn1">Toggle Orbits</button>
+          <button id="btn2">Orbits Color</button>
+          <button id="btn3">Real Saturn</button>
+          <button id="btn4">Star Trek TNG</button>
+          <button id="btn5">Hide Info</button>
+        </div>
+
+        
+      </div>
+
+      <button id="settings-btn" class="settings-btn">Settings</button>
+        <div class="info-container-main">
+          <div class="info-container">
+            <img class="planet-image" src="images/earth.jpg" alt="">
+            <h1 id="header">Earth</h1>
+            <ul class="Data List">
+              <li>Rank Order from Sun: <span id="data-rank">3</span></li>
+              <li>Distance from the Sun: <span id="data-distance">149.60 million km</span></li>
+              <li>Orbit Length: <span id="data-orbit-length">365.25 days</span></li>
+            </ul>
+            <p id="paragraph">This is our planet. The pale blue dot.</p>
+          </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
